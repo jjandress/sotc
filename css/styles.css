@@ -1,12 +1,59 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+    position: relative;
+    font-family: segoi-ui;
+    font-size: 1.6rem;
+    background-image: url('img/site-header-background.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+  }
+
+img {
+    max-width: 100%; /** La imagen se adapta al tamaño del padre**/
+}
+
+
 @font-face {
     font-family: segoi-ui;
     src: url('../segoe-ui-4-cufonfonts/Segoe\ UI.ttf');
 }
 
-body {
-    font-family: segoi-ui;
+.navegador {
+    position: absolute;
+    top: 1%;
 }
 
-img {
-    max-width: 100%;
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li a {
+  text-decoration: none;
+}
+
+.imglogo {
+    height: 4rem;
+}
+
+.titulo {
+    position:absolute;
+    top: 2%;
+    left: 20%;
+    font-size: 5.3rem;
+    color: #053477;
+    ;
 }
