@@ -30,11 +30,28 @@ img {
 
 .navegador {
     position: absolute;
-    top: 1%;
+    display: flex;
+    justify-content: flex-end;
+    top: .2%;
+    right: 20%;
+}
+
+.navegador a[aria-current="page"] {
+    background-color: blue;
+    color: white;
+    border: 0.2rem solid blue;
+    border-radius: 0.4rem;
+    margin-top: 0.6rem;
+    padding: 0.8rem;
+
+}
+
+.navegador a {
+    color: #053477;
 }
 
 .nav-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
   gap: 2rem;
   margin: 0;
@@ -45,8 +62,16 @@ img {
   text-decoration: none;
 }
 
+
 .imglogo {
-    height: 4rem;
+    height: 6rem;
+    position: relative;
+    display: flex;
+    left: 20%;
+}
+
+.contenedor-imgf{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .titulo {
@@ -56,4 +81,19 @@ img {
     font-size: 5.3rem;
     color: #053477;
     ;
+}
+
+.titulo2 {
+    position: relative;
+    left: 2%;
+    font-size: 5rem;
+    color: #2A4B7A;
+
+}
+
+.img-envios {
+    height: 10rem;
+    position: relative;
+    display: flex;
+    left: 20%;
 }
